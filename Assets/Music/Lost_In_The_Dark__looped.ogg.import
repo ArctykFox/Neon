@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Lost_In_The_Dark__looped.ogg-4a9606f38038142b0b672029dca495f7.oggstr"
+
+[deps]
+
+source_file="res://Assets/Music/Lost_In_The_Dark__looped.ogg"
+dest_files=[ "res://.import/Lost_In_The_Dark__looped.ogg-4a9606f38038142b0b672029dca495f7.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

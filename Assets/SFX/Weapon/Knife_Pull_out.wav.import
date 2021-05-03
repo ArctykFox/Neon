@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Knife_Pull_out.wav-c7e65357ae35faa96e89e6a3778296ff.sample"
+
+[deps]
+
+source_file="res://Assets/SFX/Weapon/Knife_Pull_out.wav"
+dest_files=[ "res://.import/Knife_Pull_out.wav-c7e65357ae35faa96e89e6a3778296ff.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

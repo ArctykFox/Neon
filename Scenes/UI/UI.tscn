@@ -1,0 +1,89 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Assets/UI/health.png" type="Texture" id=1]
+[ext_resource path="res://Assets/UI/bullet.png" type="Texture" id=2]
+[ext_resource path="res://Assets/UI/knife.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UI/handgun.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/ekg-2069872_640.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UI/rifle.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UI/health-bg.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Fonts/Font.tres" type="DynamicFont" id=8]
+[ext_resource path="res://Assets/UI/shotgun.png" type="Texture" id=9]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="PlayerHealthbar" type="TextureProgress" parent="."]
+margin_left = 47.0
+margin_top = -3.0
+margin_right = 909.0
+margin_bottom = 357.0
+rect_scale = Vector2( 0.165006, 0.145122 )
+texture_under = ExtResource( 7 )
+texture_progress = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AmmoInventory" type="Label" parent="."]
+margin_left = 64.0
+margin_top = 56.0
+margin_right = 214.0
+margin_bottom = 80.0
+rect_scale = Vector2( 1, 0.984136 )
+custom_fonts/font = ExtResource( 8 )
+text = "20/30"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Heart" type="Sprite" parent="."]
+modulate = Color( 0.745098, 0.745098, 0.745098, 1 )
+position = Vector2( 9, 8 )
+scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="Bullet" type="Sprite" parent="."]
+modulate = Color( 0.662745, 0.415686, 0.184314, 1 )
+position = Vector2( 49.0819, 63 )
+rotation = 1.5708
+scale = Vector2( 0.04, 0.04 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 106.971, 118.873, 279.615, 1010.61 )
+
+[node name="Rifle" type="Sprite" parent="."]
+modulate = Color( 0.313726, 0.313726, 0.313726, 1 )
+position = Vector2( 9.5, 91.5676 )
+scale = Vector2( 0.18, 0.2 )
+texture = ExtResource( 6 )
+centered = false
+region_rect = Rect2( 50, 85, 332, 210 )
+
+[node name="Handgun" type="Sprite" parent="."]
+visible = false
+modulate = Color( 0.313726, 0.313726, 0.313726, 1 )
+position = Vector2( 10, 104 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 4 )
+centered = false
+flip_h = true
+region_rect = Rect2( 50, 85, 332, 210 )
+
+[node name="Shotgun" type="Sprite" parent="."]
+modulate = Color( 0.313726, 0.313726, 0.313726, 1 )
+position = Vector2( 7.78696, 79.4822 )
+scale = Vector2( 0.2, 0.25 )
+texture = ExtResource( 9 )
+centered = false
+region_rect = Rect2( -6.027, 90, 651.027, 142 )
+
+[node name="Knife" type="Sprite" parent="."]
+visible = false
+modulate = Color( 0.682353, 0.682353, 0.682353, 1 )
+position = Vector2( 9.5842, 86.3024 )
+scale = Vector2( 0.1, 0.15 )
+texture = ExtResource( 3 )
+centered = false
+region_rect = Rect2( 50, 85, 332, 210 )

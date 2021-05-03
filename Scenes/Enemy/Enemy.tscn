@@ -1,0 +1,166 @@
+[gd_scene load_steps=57 format=2]
+
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_16.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_10.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_11.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_14.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_13.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_12.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_15.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_7.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_8.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_9.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_3.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_0.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_1.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_2.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_6.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Enemy/attack/skeleton-attack_7.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Enemy/attack/skeleton-attack_8.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_5.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Enemy/move/skeleton-move_4.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_12.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_13.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_16.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Enemy/attack/skeleton-attack_0.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_6.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_7.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_14.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_2.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_3.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_5.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_9.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_15.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_1.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_0.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_4.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_8.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_10.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Enemy/idle/skeleton-idle_11.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Enemy/attack/skeleton-attack_3.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Enemy/attack/skeleton-attack_6.png" type="Texture" id=39]
+[ext_resource path="res://Assets/Enemy/attack/skeleton-attack_1.png" type="Texture" id=40]
+[ext_resource path="res://Assets/Enemy/attack/skeleton-attack_4.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Enemy/attack/skeleton-attack_2.png" type="Texture" id=42]
+[ext_resource path="res://Assets/Enemy/attack/skeleton-attack_5.png" type="Texture" id=43]
+[ext_resource path="res://Scripts/Enemy/Enemy.gd" type="Script" id=44]
+[ext_resource path="res://Assets/SFX/Enemy/Zombie Death.wav" type="AudioStream" id=45]
+[ext_resource path="res://Assets/SFX/Enemy/Zombie Gets Attacked.wav" type="AudioStream" id=46]
+[ext_resource path="res://Assets/UI/health.png" type="Texture" id=47]
+[ext_resource path="res://Assets/UI/health-bg.png" type="Texture" id=48]
+[ext_resource path="res://Assets/SFX/Enemy/Zombie_Idle.wav" type="AudioStream" id=49]
+[ext_resource path="res://Assets/SFX/Enemy/Zombie_attack.wav" type="AudioStream" id=50]
+[ext_resource path="res://Assets/SFX/Enemy/Zombie_Agressive.wav" type="AudioStream" id=51]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 33 ), ExtResource( 32 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 34 ), ExtResource( 29 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 35 ), ExtResource( 30 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 26 ), ExtResource( 31 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "idle",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 40 ), ExtResource( 42 ), ExtResource( 38 ), ExtResource( 41 ), ExtResource( 43 ), ExtResource( 39 ), ExtResource( 16 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "attack",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 11 ), ExtResource( 19 ), ExtResource( 18 ), ExtResource( 15 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "move",
+"speed": 25.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 17.1728
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 222.89
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 30.5869
+
+[sub_resource type="CircleShape2D" id=5]
+
+[node name="Enemy" type="KinematicBody2D" groups=[
+"Enemy",
+]]
+position = Vector2( 404.715, 266.985 )
+z_index = 1
+collision/safe_margin = 0.001
+script = ExtResource( 44 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+modulate = Color( 0.470588, 0.470588, 0.470588, 1 )
+position = Vector2( 1.06616, 0.61145 )
+scale = Vector2( 0.2, 0.2 )
+frames = SubResource( 1 )
+animation = "idle"
+
+[node name="AttackedSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 46 )
+volume_db = 10.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -2.57077, 2.00723 )
+scale = Vector2( 1.08, 1 )
+shape = SubResource( 2 )
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 45 )
+volume_db = 10.0
+
+[node name="DetectionArea" type="Area2D" parent="."]
+visible = false
+position = Vector2( -5.24408, 2.62201 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+shape = SubResource( 3 )
+
+[node name="AttackArea" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
+position = Vector2( -2.73291, 2.31247 )
+shape = SubResource( 4 )
+
+[node name="AttackSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 50 )
+volume_db = -10.0
+
+[node name="HitArea" type="Area2D" parent="."]
+visible = false
+
+[node name="Hitbox" type="CollisionShape2D" parent="HitArea"]
+position = Vector2( 17.9296, 0.562347 )
+rotation = 1.54077
+scale = Vector2( 0.790155, 0.581062 )
+shape = SubResource( 5 )
+disabled = true
+
+[node name="Healthbar" type="TextureProgress" parent="."]
+margin_left = -20.7151
+margin_top = -21.9849
+margin_right = 841.285
+margin_bottom = 338.015
+rect_rotation = 90.0
+rect_scale = Vector2( 0.06, 0.06 )
+texture_under = ExtResource( 48 )
+texture_progress = ExtResource( 47 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IdleSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 49 )
+volume_db = -5.0
+max_distance = 500.0
+
+[node name="MoveSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 51 )
+max_distance = 300.0
+[connection signal="finished" from="DeathSound" to="." method="_on_DeathSound_finished"]
+[connection signal="body_entered" from="DetectionArea" to="." method="_on_DetectionArea_body_entered"]
+[connection signal="body_exited" from="DetectionArea" to="." method="_on_DetectionArea_body_exited"]
+[connection signal="body_entered" from="AttackArea" to="." method="_on_AttackArea_body_entered"]
+[connection signal="body_exited" from="AttackArea" to="." method="_on_AttackArea_body_exited"]
+[connection signal="body_entered" from="HitArea" to="." method="_on_HitArea_body_entered"]

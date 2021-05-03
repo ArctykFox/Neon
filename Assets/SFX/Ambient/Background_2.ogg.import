@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Background_2.ogg-c7443162b7f6499aebb5f156e67e270a.oggstr"
+
+[deps]
+
+source_file="res://Assets/SFX/Ambient/Background_2.ogg"
+dest_files=[ "res://.import/Background_2.ogg-c7443162b7f6499aebb5f156e67e270a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

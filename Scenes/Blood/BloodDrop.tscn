@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Blood/1/1_7.png" type="Texture" id=1]
+
+[node name="BloodDrop" type="Sprite"]
+modulate = Color( 0.54902, 0.54902, 0.54902, 1 )
+position = Vector2( -6.25757, 5.39233 )
+scale = Vector2( 0.6, 0.7 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 28.593, 28.102, 36, 36 )

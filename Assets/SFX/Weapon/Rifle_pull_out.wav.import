@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Rifle_pull_out.wav-04551091546d1da2e7cd43855ad1636a.sample"
+
+[deps]
+
+source_file="res://Assets/SFX/Weapon/Rifle_pull_out.wav"
+dest_files=[ "res://.import/Rifle_pull_out.wav-04551091546d1da2e7cd43855ad1636a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

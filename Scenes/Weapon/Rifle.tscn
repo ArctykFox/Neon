@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Weapon/Rifle.gd" type="Script" id=1]
+[ext_resource path="res://Assets/SFX/Weapon/Rifle_shot.wav" type="AudioStream" id=2]
+[ext_resource path="res://Assets/SFX/Weapon/assault_rifle_reload.wav" type="AudioStream" id=3]
+[ext_resource path="res://Assets/SFX/Weapon/Rifle_pull_out.wav" type="AudioStream" id=4]
+
+[node name="Rifle" type="Node2D"]
+script = ExtResource( 1 )
+bullet_speed = 800
+
+[node name="GunShotSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = 10.0
+
+[node name="GunReloadSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = 5.0
+
+[node name="GunSwitchSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = 15.0

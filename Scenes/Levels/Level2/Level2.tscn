@@ -1,0 +1,195 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Scenes/UI/PauseUI.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/UI/UI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/Levels/Level2/Level2.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/Enemy/Enemy.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Levels/Level2/Level2_Map.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Bullet/HealthCrate.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Bullet/AmmoCrate.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/SFX/Ambient/Wind.ogg" type="AudioStream" id=9]
+[ext_resource path="res://Scripts/Levels/Level2/Level2_SFX.gd" type="Script" id=10]
+[ext_resource path="res://Assets/SFX/Ambient/Background_2.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Assets/SFX/Ambient/Helicopter_passing_by.ogg" type="AudioStream" id=12]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 192, 416 )
+
+[node name="Level2" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Level2_Map" parent="." instance=ExtResource( 6 )]
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+position = Vector2( 96, 544 )
+
+[node name="PauseUI" parent="." instance=ExtResource( 1 )]
+
+[node name="UI" parent="." instance=ExtResource( 2 )]
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Enemy" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 576, 320 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy2" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 96, 320 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy3" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 384, 96 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy4" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 384, 544 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy5" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 640, 640 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy6" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 1120, 320 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy7" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 1120, 672 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy8" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 1472, 512 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy9" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 1792, 640 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy10" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 1728, 64 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy11" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 1184, 64 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy12" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 2432, 128 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy13" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 2432, 480 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy14" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 2080, 448 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy15" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 3104, 224 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy16" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 3104, 448 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy17" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 3488, 480 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy18" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 3488, 224 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Enemy19" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 3296, 384 )
+rotation = -3.06374
+health = 110
+speed = 350
+
+[node name="Pickups" type="Node2D" parent="."]
+
+[node name="HealthCrate2" parent="Pickups" instance=ExtResource( 7 )]
+position = Vector2( 1056, 64 )
+
+[node name="HealthCrate3" parent="Pickups" instance=ExtResource( 7 )]
+position = Vector2( 1856, 640 )
+
+[node name="HealthCrate4" parent="Pickups" instance=ExtResource( 7 )]
+position = Vector2( 2464, 288 )
+
+[node name="AmmoCrate2" parent="Pickups" instance=ExtResource( 8 )]
+position = Vector2( 2784, 544 )
+
+[node name="AmmoCrate3" parent="Pickups" instance=ExtResource( 8 )]
+position = Vector2( 1856, 32 )
+
+[node name="AmmoCrate5" parent="Pickups" instance=ExtResource( 8 )]
+position = Vector2( 1216, 320 )
+
+[node name="Level2_SFX" type="Node2D" parent="."]
+script = ExtResource( 10 )
+
+[node name="Background" type="AudioStreamPlayer2D" parent="Level2_SFX"]
+stream = ExtResource( 9 )
+autoplay = true
+
+[node name="HeliSoundArea" type="Area2D" parent="Level2_SFX"]
+position = Vector2( 960, 352 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level2_SFX/HeliSoundArea"]
+shape = SubResource( 1 )
+
+[node name="HeliSound" type="AudioStreamPlayer" parent="Level2_SFX/HeliSoundArea"]
+stream = ExtResource( 12 )
+volume_db = 15.0
+
+[node name="Noise_1_area" type="Area2D" parent="Level2_SFX"]
+position = Vector2( 1952, 320 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level2_SFX/Noise_1_area"]
+shape = SubResource( 1 )
+
+[node name="Noise_1_sound" type="AudioStreamPlayer" parent="Level2_SFX/Noise_1_area"]
+stream = ExtResource( 11 )
+volume_db = 10.0
+pitch_scale = 0.8
+[connection signal="body_entered" from="Level2_SFX/HeliSoundArea" to="Level2_SFX" method="_on_HeliSoundArea_body_entered"]
+[connection signal="body_entered" from="Level2_SFX/Noise_1_area" to="Level2_SFX" method="_on_Noise_1_area_body_entered"]

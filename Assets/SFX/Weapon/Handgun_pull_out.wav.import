@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Handgun_pull_out.wav-0f57b7e506a85e7ff5a9ae9a06b9b4ca.sample"
+
+[deps]
+
+source_file="res://Assets/SFX/Weapon/Handgun_pull_out.wav"
+dest_files=[ "res://.import/Handgun_pull_out.wav-0f57b7e506a85e7ff5a9ae9a06b9b4ca.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

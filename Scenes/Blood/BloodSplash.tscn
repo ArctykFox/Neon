@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Blood/blood-splatter.png" type="Texture" id=1]
+
+[node name="BloodSplash" type="Sprite"]
+modulate = Color( 0.6, 0.6, 0.6, 1 )
+position = Vector2( -6.25757, 5.39233 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 500, 500 )

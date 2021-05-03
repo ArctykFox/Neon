@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Zombie_Agressive.wav-3bcf570434b9f5fccbf79c428e41e95a.sample"
+
+[deps]
+
+source_file="res://Assets/SFX/Enemy/Zombie_Agressive.wav"
+dest_files=[ "res://.import/Zombie_Agressive.wav-3bcf570434b9f5fccbf79c428e41e95a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

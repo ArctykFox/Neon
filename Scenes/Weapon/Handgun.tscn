@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Weapon/Handgun.gd" type="Script" id=1]
+[ext_resource path="res://Assets/SFX/Weapon/Handgun_shot.wav" type="AudioStream" id=2]
+[ext_resource path="res://Assets/SFX/Weapon/Handgun_pull_out.wav" type="AudioStream" id=3]
+[ext_resource path="res://Assets/SFX/Weapon/handgun_reload.wav" type="AudioStream" id=4]
+
+[node name="Handgun" type="Node2D"]
+script = ExtResource( 1 )
+bullet_speed = 400
+damage = 20
+rate_of_fire = 120
+
+[node name="GunShotSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = 10.0
+
+[node name="GunReloadSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = 10.0
+
+[node name="GunSwitchSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = 15.0

@@ -1,0 +1,49 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://Assets/Blood/1/1_9.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Blood/1/1_12.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Blood/1/1_15.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Blood/1/1_18.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Blood/1/1_4.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Blood/1/1_11.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Blood/1/1_16.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Blood/1/1_22.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Blood/1/1_13.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Blood/1/1_24.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Blood/1/1_21.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Blood/1/1_25.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Blood/1/1_26.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Blood/1/1_3.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Blood/1/1_10.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Blood/1/1_27.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Blood/1/1_14.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Blood/1/1_19.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Blood/1/1_20.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Blood/1/1_23.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Blood/1/1_1.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Blood/1/1_7.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Blood/1/1_5.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Blood/1/1_0.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Blood/1/1_2.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Blood/1/1_6.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Blood/1/1_8.png" type="Texture" id=39]
+[ext_resource path="res://Assets/Blood/1/1_17.png" type="Texture" id=40]
+[ext_resource path="res://Assets/Blood/1/1_28.png" type="Texture" id=63]
+[ext_resource path="res://Scripts/Blood/BloodHit.gd" type="Script" id=101]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 36 ), ExtResource( 33 ), ExtResource( 37 ), ExtResource( 26 ), ExtResource( 17 ), ExtResource( 35 ), ExtResource( 38 ), ExtResource( 34 ), ExtResource( 39 ), ExtResource( 13 ), ExtResource( 27 ), ExtResource( 18 ), ExtResource( 14 ), ExtResource( 21 ), ExtResource( 29 ), ExtResource( 15 ), ExtResource( 19 ), ExtResource( 40 ), ExtResource( 16 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 23 ), ExtResource( 20 ), ExtResource( 32 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 28 ), ExtResource( 63 ) ],
+"loop": true,
+"name": "BloodHit_1",
+"speed": 60.0
+} ]
+
+[node name="BloodHit" type="AnimatedSprite"]
+modulate = Color( 0.690196, 0.454902, 0.454902, 1 )
+scale = Vector2( 0.8, 0.8 )
+z_index = 5
+frames = SubResource( 1 )
+animation = "BloodHit_1"
+script = ExtResource( 101 )
+[connection signal="animation_finished" from="." to="." method="_on_BloodHit_animation_finished"]
